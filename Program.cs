@@ -21,8 +21,11 @@ namespace Y9_DEC_TO_BIN_SKELETON
             string string2 = Console.ReadLine();
             Console.WriteLine(string1 + string2);
 
-            ..
 
+
+            Console.WriteLine("Enter the denary number you want to covert to binary");
+            string userDenary = Console.ReadLine();
+            
 
 
 
@@ -30,15 +33,15 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //MAIN:  NUMBER CONVERSION PROGRAM
 
             //CODE GOES HERE
-            // }
+        }
 
             //static void means the function will not return a value so it does not need a data type 
             //...this function DOES return a value so the method must have a data type
-            //static string numberConversion(int number, int numberbase)
-            //{
+            static string numberConversion(int number, int numberbase)
+            {
             //CODE GOES HERE
 
-            // return result; //REMOVE THE RED LINE!
+             return result; //REMOVE THE RED LINE!
         }
     }
 }
