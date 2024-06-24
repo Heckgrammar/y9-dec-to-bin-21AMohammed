@@ -21,6 +21,8 @@ namespace Y9_DEC_TO_BIN_SKELETON
             string string2 = Console.ReadLine();
             Console.WriteLine(string1 + string2);
 
+            ..
+
 
 
 
