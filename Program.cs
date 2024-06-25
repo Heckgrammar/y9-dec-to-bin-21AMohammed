@@ -31,14 +31,14 @@ namespace Y9_DEC_TO_BIN_SKELETON
         //...this function DOES return a value so the method must have a data type
         static string numberConversion(int number, int numberbase)
         {
-           string result = ("0");
+           int result = (0);
             Console.WriteLine("Enter the Denary number that you want converted to Binary");
             number = (Convert.ToInt32(Console.ReadLine()));
             numberbase = (2);
 
             while (number / numberbase > 0)
             {
-                result = ();
+                result = number % numberbase
             }
            
 
