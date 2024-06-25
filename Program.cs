@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,28 +21,28 @@ namespace Y9_DEC_TO_BIN_SKELETON
             Console.WriteLine("Enter another string");
             string string2 = Console.ReadLine();
             Console.WriteLine(string1 + string2);
-
-
-
-            Console.WriteLine("Enter the denary number you want to covert to binary");
-            string userDenary = Console.ReadLine();
-            
-
-
-
-
-            //MAIN:  NUMBER CONVERSION PROGRAM
-
-            //CODE GOES HERE
         }
+        //MAIN:  NUMBER CONVERSION PROGRAM
 
-            //static void means the function will not return a value so it does not need a data type 
-            //...this function DOES return a value so the method must have a data type
-            static string numberConversion(int number, int numberbase)
+        //CODE GOES HERE
+
+
+        //static void means the function will not return a value so it does not need a data type 
+        //...this function DOES return a value so the method must have a data type
+        static string numberConversion(int number, int numberbase)
+        {
+           string result = ("0");
+            Console.WriteLine("Enter the Denary number that you want converted to Binary");
+            number = (Convert.ToInt32(Console.ReadLine()));
+            numberbase = (2);
+
+            while (number / numberbase > 0)
             {
-            //CODE GOES HERE
+                result = ();
+            }
+           
 
-             return result; //REMOVE THE RED LINE!
+            return result; //REMOVE THE RED LINE!
         }
     }
 }
