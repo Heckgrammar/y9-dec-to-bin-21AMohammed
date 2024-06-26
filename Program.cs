@@ -16,31 +16,31 @@ namespace Y9_DEC_TO_BIN_SKELETON
             string myString = "12"; //watch me being cast from string to int
             int myStringAsInt = Convert.ToInt32(myString); //watch me cast from string to int
 
-            Console.WriteLine("Enter a string");
-            string string1 = Console.ReadLine();
-            Console.WriteLine("Enter another string");
-            string string2 = Console.ReadLine();
-            Console.WriteLine(string1 + string2);
+            Console.WriteLine("Enter number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine (numberConversion(num , 2));
         }
         //MAIN:  NUMBER CONVERSION PROGRAM
-
-        //CODE GOES HERE
-
+                   
 
         //static void means the function will not return a value so it does not need a data type 
         //...this function DOES return a value so the method must have a data type
-        static string numberConversion(int number, int numberbase)
+        static string numberConversion(int num, int numberbase)
         {
-           int result = (0);
-            Console.WriteLine("Enter the Denary number that you want converted to Binary");
-            number = (Convert.ToInt32(Console.ReadLine()));
+           string result = ("");
+            int count = 0;
             numberbase = (2);
+            string[] myArray = {""}; 
 
-            while (number / numberbase > 0)
+            while (num > 0)
             {
-                result = number % numberbase
+                int binNum = num % numberbase;
+                count = count + 1;
             }
-           
+            for (int i = 0; i < count; i++)
+            {
+                
+            }
 
             return result; //REMOVE THE RED LINE!
         }
