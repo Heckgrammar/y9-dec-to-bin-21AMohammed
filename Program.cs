@@ -18,30 +18,32 @@ namespace Y9_DEC_TO_BIN_SKELETON
 
             Console.WriteLine("Enter number");
             int num = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine (numberConversion(num , 2));
+            Console.WriteLine(numberConversion(num, 2));
         }
         //MAIN:  NUMBER CONVERSION PROGRAM
                    
 
         //static void means the function will not return a value so it does not need a data type 
         //...this function DOES return a value so the method must have a data type
+
+
         static string numberConversion(int num, int numberbase)
         {
            string result = ("");
             int count = 0;
-            numberbase = (2);
-            string[] myArray = {""}; 
-
+            numberbase = 2;
+            int[] myArray = new int[32];
             while (num > 0)
             {
-                int binNum = num % numberbase;
+                myArray[count] = num % numberbase;
+                num = num / numberbase;
                 count = count + 1;
             }
-            for (int i = 0; i < count; i++)
+            for (int i = count - 1 ; i >= 0; i--)
             {
-                
+                Console.Write(myArray[i]);
             }
-
+            
             return result; //REMOVE THE RED LINE!
         }
     }
