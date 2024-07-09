@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace Y9_DEC_TO_BIN_SKELETON
 {
     internal class Program
+
     {
         static void Main(string[] args)
         {
@@ -23,6 +24,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
             {
                 Console.WriteLine("Number must be above 0");
             }
+   
             if (num >= 257)
             {
                 Console.WriteLine("Number must be below 257");
@@ -54,8 +56,13 @@ namespace Y9_DEC_TO_BIN_SKELETON
             {
                 Console.Write(myArray[i]);
             }
-            
+
+            Console.WriteLine("Enter a number to be converted into hexadecimal");
+            string hexanum = Console.ReadLine();
+
             return result; //REMOVE THE RED LINE!
-        }
+
+          
+                    } 
     }
 }
